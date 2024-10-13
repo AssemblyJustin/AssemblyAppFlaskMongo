@@ -7,27 +7,28 @@
 # Don't ignore .gitignore
 !.gitignore
 
-# Ignore Python cache files within AssemblyApp
-AssemblyApp/**/__pycache__/
-AssemblyApp/**/*.py[cod]
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
 
-# Ignore virtual environment if it's inside AssemblyApp
-AssemblyApp/env/
-AssemblyApp/venv/
+# Ignore virtual environments
+env/
+venv/
+ENV/
 
-# Ignore .env file in AssemblyApp
-AssemblyApp/.env
+# Ignore .env file
+.env
 
-# Ignore database files in AssemblyApp
-AssemblyApp/**/*.db
-AssemblyApp/**/*.sqlite3
+# Ignore database files
+*.db
+*.sqlite3
 
-# Ignore log files in AssemblyApp
-AssemblyApp/**/*.log
+# Ignore log files
+*.log
 
-# Ignore OS generated files in AssemblyApp
-AssemblyApp/**/.DS_Store
-AssemblyApp/**/Thumbs.db
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
 
 # Python distribution / packaging
 .Python
@@ -46,3 +47,10 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Ignore all .pyc files
+*.pyc
