@@ -1,56 +1,43 @@
 # Ignore everything
 *
 
-# But don't ignore the AssemblyApp directory
+# But don't ignore the AssemblyApp directory and its contents
 !/AssemblyApp/
+!/AssemblyApp/**
 
 # Don't ignore .gitignore
-!.gitignore
+!.gitignore 
 
-# Ignore Python cache files
-__pycache__/
-*.py[cod]
+# Ignore Python cache files within AssemblyApp
+AssemblyApp/**/__pycache__/
+AssemblyApp/**/*.py[cod]
 
-# Ignore virtual environments
-env/
-venv/
-ENV/
+# Ignore virtual environments within AssemblyApp
+AssemblyApp/**/env/
+AssemblyApp/**/venv/
+AssemblyApp/**/ENV/
 
-# Ignore .env file
-.env
+# Ignore .env file in AssemblyApp
+AssemblyApp/**/.env
 
-# Ignore database files
-*.db
-*.sqlite3
+# Ignore database files in AssemblyApp
+AssemblyApp/**/*.db
+AssemblyApp/**/*.sqlite3
 
-# Ignore log files
-*.log
+# Ignore log files in AssemblyApp
+AssemblyApp/**/*.log
 
-# Ignore OS generated files
-.DS_Store
-Thumbs.db
+# Ignore OS generated files in AssemblyApp
+AssemblyApp/**/.DS_Store
+AssemblyApp/**/Thumbs.db
 
-# Python distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# Python distribution / packaging in AssemblyApp
+AssemblyApp/**/*.egg-info/
+AssemblyApp/**/*.egg
 
-# IDE specific files
-.vscode/
-.idea/
+# IDE specific files in AssemblyApp
+AssemblyApp/**/.vscode/
+AssemblyApp/**/.idea/
 
-# Ignore all .pyc files
-*.pyc
+# Ignore all .pyc files in AssemblyApp
+AssemblyApp/**/*.pyc
