@@ -1,0 +1,48 @@
+# Ignore everything
+*
+
+# But don't ignore the AssemblyApp directory
+!/AssemblyApp/
+
+# Don't ignore .gitignore
+!.gitignore
+
+# Ignore Python cache files within AssemblyApp
+AssemblyApp/**/__pycache__/
+AssemblyApp/**/*.py[cod]
+
+# Ignore virtual environment if it's inside AssemblyApp
+AssemblyApp/env/
+AssemblyApp/venv/
+
+# Ignore .env file in AssemblyApp
+AssemblyApp/.env
+
+# Ignore database files in AssemblyApp
+AssemblyApp/**/*.db
+AssemblyApp/**/*.sqlite3
+
+# Ignore log files in AssemblyApp
+AssemblyApp/**/*.log
+
+# Ignore OS generated files in AssemblyApp
+AssemblyApp/**/.DS_Store
+AssemblyApp/**/Thumbs.db
+
+# Python distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
