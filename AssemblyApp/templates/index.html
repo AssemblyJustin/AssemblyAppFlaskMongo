@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Revit Project Data Portal</h1>
+<p>Please <a href="{{ url_for('auth.login') }}">log in</a> to view your projects.</p>
+{% endblock %}

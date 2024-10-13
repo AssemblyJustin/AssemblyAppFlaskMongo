@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Invite User{% endblock %}
+
+{% block content %}
+<h2>Invite a New User</h2>
+<form method="POST">
+    <p>
+        Email:<br>
+        <input type="email" name="email" required>
+    </p>
+    <p>
+        Assign Projects:<br>
+        {% for project in projects %}
+            <input type="checkbox" name="assigned_projects" value="{{ project.project_number }}">
+            {{ project.project_name }} ({{ project.project_number }})<br>
+        {% endfor %}
+    </p>
+    <p><button type="submit">Generate Invitation</button></p>
+</form>
+{% endblock %}
